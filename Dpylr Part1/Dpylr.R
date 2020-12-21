@@ -1,4 +1,4 @@
-setwd("")
+setwd("/Users/adamgrant/Desktop/Data Analytics/R")
 library(rio)
 library(tidyverse)
 dat <- import('bestsellers.csv')

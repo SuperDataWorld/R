@@ -20,7 +20,7 @@ x <- dat %>% group_by(Year) %>% summarise(Total_Reviews = sum(Reviews, na.rm=TRU
 options(scipen=5)
 plot(x,ylab='Total Reviews',type="b")
 
-# Question 4: Fiction V Non-Fiction?
+# Question 4: Fiction V Non-Fiction
 dat %>% group_by(Year) %>% summarise(Fiction = sum(Genre == "Fiction", na.rm=TRUE)) %>% mutate(Non_Fiction = 50 - Fiction)
 
 # Multi Summary
